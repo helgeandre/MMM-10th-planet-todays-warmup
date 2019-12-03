@@ -1,13 +1,10 @@
-/* global Log, Module, moment */
+/* global Log, Module */
 
 /* Magic Mirror
  * Module: 10th-planet-todays-warmup
  *
  * By Helge Andre Sletten
- * {
-        module: "10th-planet-todays-warmup",
-        position: "top_center"
-},
+ * 
  * MIT Licensed.
  */
 Module.register("10th-planet-todays-warmup", {
@@ -86,11 +83,6 @@ Module.register("10th-planet-todays-warmup", {
 		morningEndTime: 12,
 		afternoonStartTime: 12,
 		afternoonEndTime: 17
-	},
-
-	// Define required scripts.
-	getScripts: function() {
-		return ["moment.js"];
 	},
 
 	// Define start sequence.
