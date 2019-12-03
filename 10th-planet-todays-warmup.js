@@ -4,6 +4,10 @@
  * Module: 10th-planet-todays-warmup
  *
  * By Helge Andre Sletten
+ * {
+        module: "10th-planet-todays-warmup",
+        position: "top_center"
+},
  * MIT Licensed.
  */
 Module.register("10th-planet-todays-warmup", {
@@ -94,12 +98,6 @@ Module.register("10th-planet-todays-warmup", {
 		Log.info("Starting module: " + this.name);
 
 		var self = this;
-		if (this.config.remoteFile !== null) {
-			this.complimentFile(function(response) {
-				self.config.compliments = JSON.parse(response);
-				self.updateDom();
-			});
-		}
 
 		// Schedule update timer.
 		setInterval(function() {
@@ -139,7 +137,7 @@ Module.register("10th-planet-todays-warmup", {
     },
 
     getWarmupById: function(id){
-        return warmups.filter(function(item){
+        return this.warmups.filter(function(item){
             return item.id === id;
         })[0];
     },
