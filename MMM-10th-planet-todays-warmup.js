@@ -138,7 +138,7 @@ Module.register("MMM-10th-planet-todays-warmup", {
         var letterOfTheDay = this.getWarmUpLetterByDate();
         var warmup = this.getWarmupById(letterOfTheDay);   
 
-        return 'Warmup ' + warmup.id + ' - ' + warmup.title;
+        return "Today's warm up: " + warmup.id + ' - ' + warmup.title;
     },
 
 	// Override dom generator.
