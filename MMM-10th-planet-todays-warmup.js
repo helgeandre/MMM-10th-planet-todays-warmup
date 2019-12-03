@@ -1,13 +1,13 @@
 /* global Log, Module */
 
 /* Magic Mirror
- * Module: 10th-planet-todays-warmup
+ * Module: MMM-10th-planet-todays-warmup
  *
  * By Helge Andre Sletten
  * 
  * MIT Licensed.
  */
-Module.register("10th-planet-todays-warmup", {
+Module.register("MMM-10th-planet-todays-warmup", {
 
 	// Module config defaults.
 	defaults: {
