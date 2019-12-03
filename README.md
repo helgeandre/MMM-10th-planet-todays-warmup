@@ -1,8 +1,8 @@
-# Module: Compliments
-The `10th-planet-todays-warmup` module is displaying todays warmup routine for 10th planet gym's.
+# Module: MMM-10th-planet-todays-warmup
+The `MMM-10th-planet-todays-warmup` module is displaying todays 10th planet warm up routine.
 
 ## Screenshots
-- Compliments Screenshot
+- Screenshot
 todo: add screenshot
 
 ## Using the module
@@ -35,11 +35,9 @@ The following properties can be configured:
 | `warmups`	   | The list of warmups. <br><br> **Possible values:** An array with the warmup routine.
 | `classes`        | Override the CSS classes of the div showing the compliments <br><br> **Default value:** `thin xlarge bright`
 
-All the rest of the time that does not fall into the morningStartTime-morningEndTime and afternoonStartTime-afternoonEndTime ranges is considered "evening".
-
 ### Compliment configuration
 
-The `compliments` property contains an object with four arrays: <code>morning</code>, <code>afternoon</code>, <code>evening</code> and <code>anytime</code>. Based on the time of the day, the compliments will be picked out of one of these arrays. The arrays contain one or multiple compliments.
+The `warmups` property contains an array of the warm up sets
 
 #### Default value:
 ````javascript
