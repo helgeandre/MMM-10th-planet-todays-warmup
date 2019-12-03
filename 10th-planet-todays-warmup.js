@@ -129,7 +129,7 @@ Module.register("10th-planet-todays-warmup", {
     },
 
     getWarmupById: function(id){
-        return this.warmups.filter(function(item){
+        return this.config.warmups.filter(function(item){
             return item.id === id;
         })[0];
     },
